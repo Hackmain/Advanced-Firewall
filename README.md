@@ -56,6 +56,7 @@ To view the current firewall rules:<br>
 
 ```sudo python3 firewall.py -logs```<br>
 
+```sh
 Command Line Arguments<br>
 -sniff: Start packet sniffing.<br>
 -interface <interface>: Specify the network interface to use (default: eth0).<br>
@@ -67,6 +68,7 @@ Command Line Arguments<br>
 -add_domain <domain>: Add a domain to the allowed list.<br>
 -block_domain <domain>: Block a domain.<br>
 -logs: Display current firewall rules and logs of sniffed packets.<br>
+```
 
 ## Security and Privacy<br>
 This script is intended for educational purposes and basic network protection. It should not be used as a replacement for professional-grade firewall solutions in production environments.
