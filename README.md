@@ -18,13 +18,12 @@ The **Advanced Python Firewall** is an advanced script designed for network moni
 
 To install the required library, run:
 
-```bash
+```
 pip install scapy
 Usage
 Start Sniffing Packets
 To start sniffing packets on a specific network interface and capture up to a set number of packets, use the following command:
-
-bash
+'''
 Copy code
 sudo python3 firewall.py -sniff -interface eth0 -max_packets 100
 Replace eth0 with your network interface and 100 with the desired number of packets to capture before stopping.
