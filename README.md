@@ -26,34 +26,34 @@ Start Sniffing Packets
 To start sniffing packets on a specific network interface and capture up to a set number of packets, use the following command:
 
 
-```sudo python3 firewall.py -sniff -interface eth0 -max_packets 100```
+```sudo python3 firewall.py -sniff -interface eth0 -max_packets 100```<br>
 Replace eth0 with your network interface and 100 with the desired number of packets to capture before stopping.
 
 Modify Firewall Rules
 Add IP to Allowed List:
 
-```sudo python3 firewall.py -add_ip 192.168.1.20```
-Block IP:
+```sudo python3 firewall.py -add_ip 192.168.1.20```<br>
+Block IP:<br>
 
-```sudo python3 firewall.py -block_ip 203.0.113.2```
-Add Port to Allowed List:
-
-
-```sudo python3 firewall.py -add_port 8080```
-Block Port:
+```sudo python3 firewall.py -block_ip 203.0.113.2```<br>
+Add Port to Allowed List:<br>
 
 
-```sudo python3 firewall.py -block_port 22```
-Add Domain to Allowed List:
+```sudo python3 firewall.py -add_port 8080```<br>
+Block Port:<br>
 
-```sudo python3 firewall.py -add_domain safe.com```
-Block Domain:
 
-```sudo python3 firewall.py -block_domain unsafe.com```
-Display Current Rules
-To view the current firewall rules:
+```sudo python3 firewall.py -block_port 22```<br>
+Add Domain to Allowed List:<br>
 
-```sudo python3 firewall.py -logs```
+```sudo python3 firewall.py -add_domain safe.com```<br>
+Block Domain:<br>
+
+```sudo python3 firewall.py -block_domain unsafe.com```<br>
+Display Current Rules<br>
+To view the current firewall rules:<br>
+
+```sudo python3 firewall.py -logs```<br>
 
 Command Line Arguments
 -sniff: Start packet sniffing.
