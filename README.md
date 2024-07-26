@@ -34,23 +34,29 @@ Modify Firewall Rules
 Add IP to Allowed List:
 
 ```sudo python3 firewall.py -add_ip 192.168.1.20```<br>
+
 Block IP:<br>
 
 ```sudo python3 firewall.py -block_ip 203.0.113.2```<br>
+
 Add Port to Allowed List:<br>
 
 
 ```sudo python3 firewall.py -add_port 8080```<br>
+
 Block Port:<br>
 
 
 ```sudo python3 firewall.py -block_port 22```<br>
+
 Add Domain to Allowed List:<br>
 
 ```sudo python3 firewall.py -add_domain safe.com```<br>
+
 Block Domain:<br>
 
 ```sudo python3 firewall.py -block_domain unsafe.com```<br>
+
 Display Current Rules<br>
 To view the current firewall rules:<br>
 
