@@ -14,7 +14,7 @@ The **Advanced Python Firewall** is an advanced script designed for network moni
 ## Requirements
 
 - **Python 3.x**
-- **`scapy` library**
+- **`Requierd` library**
 
 To install the required library, run:
 
@@ -27,6 +27,7 @@ To start sniffing packets on a specific network interface and capture up to a se
 
 
 ```sudo python3 firewall.py -sniff -interface eth0 -max_packets 100```<br>
+
 Replace eth0 with your network interface and 100 with the desired number of packets to capture before stopping.
 
 Modify Firewall Rules
@@ -55,18 +56,19 @@ To view the current firewall rules:<br>
 
 ```sudo python3 firewall.py -logs```<br>
 
-Command Line Arguments
--sniff: Start packet sniffing.
--interface <interface>: Specify the network interface to use (default: eth0).
--max_packets <number>: Maximum number of packets to capture before stopping.
--add_ip <IP>: Add an IP address to the allowed list.
--block_ip <IP>: Block an IP address.
--add_port <port>: Add a port to the allowed list.
--block_port <port>: Block a port.
--add_domain <domain>: Add a domain to the allowed list.
--block_domain <domain>: Block a domain.
--logs: Display current firewall rules and logs of sniffed packets.
-## Security and Privacy
+Command Line Arguments<br>
+-sniff: Start packet sniffing.<br>
+-interface <interface>: Specify the network interface to use (default: eth0).<br>
+-max_packets <number>: Maximum number of packets to capture before stopping.<br>
+-add_ip <IP>: Add an IP address to the allowed list.<br>
+-block_ip <IP>: Block an IP address.<br>
+-add_port <port>: Add a port to the allowed list.<br>
+-block_port <port>: Block a port.<br>
+-add_domain <domain>: Add a domain to the allowed list.<br>
+-block_domain <domain>: Block a domain.<br>
+-logs: Display current firewall rules and logs of sniffed packets.<br>
+
+## Security and Privacy<br>
 This script is intended for educational purposes and basic network protection. It should not be used as a replacement for professional-grade firewall solutions in production environments.
 
 
